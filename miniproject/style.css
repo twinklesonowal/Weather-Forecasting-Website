@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: url(images/weather.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.search input {
+    border: 10;
+    outline: 100;
+    background-color: #a2d0dffd;
+    color: #020202;
+    padding: 35px 50px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 15px;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.search input:focus {
+    background-color: #d1f3f2;
+}
+
+.search input:hover {
+    background-color: #d1f3f2;
+}
+
+.search button {
+    background-color: #a2d0dfde;
+    border: 0.1;
+    outline: 0;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #d1f3f2;
+}
+
+.search button img {
+    width: 20px;
+    height: 20px;
+}
+
+.weather-icon {
+    width: 180px;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.weather-icon:hover {
+    transform: scale(1.1);
+}
+
+.weather h1 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.weather h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: -10px;
+    color: #f0f0f0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 10px --20px;
+}
+
+.col p {
+    margin-top: 8px;
+    color: #d1d1d1;
+}
+
+.col img {
+    margin-bottom: 10px;
+}
+
+.humidity, .wind {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -6px;
+}
+
+#hero {
+    margin-right: 30px;
+}
+
+.region {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.weather {
+    display: none;
+}
+
+
+
+/* ✅ Dynamic Weather Backgrounds added below */
+
+body.clear {
+    background: url(images/pexels-damodigital-1647177.jpg);
+}
+
+body.sunny {
+    background: url(images/pexels-damodigital-1647177.jpg);
+}
+
+body.rain {
+    background: url(images/rain.avif);
+}
+
+body.mist {
+    background: url(images/photo-1534261655162-33f539685c55.jpeg);
+}
+
+body.clouds {
+    background: url(images/PP04042607-Serengeti-blue-low-level-cloudy-sunrise-sky.jpg);
+}
+
+body.default {
+    background: linear-gradient(135deg, #333, #555);
+}
+
+.weather{
+    display: none;
+}
